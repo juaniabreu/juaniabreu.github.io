@@ -1,0 +1,157 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', monospace;
+    background-color: #F8F9FA;
+}
+header .contenedor{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+#encabezado .contenedor{
+    display: flex;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+header a{
+    text-decoration: none;
+}
+header ul li {
+    margin-right: 20px;
+}
+
+header p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#encabezado{
+    background-color: #E9ECEF;
+    background-size: cover;
+    padding: 70px 0;
+}
+#encabezado #juani{
+    padding: 0px;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+#encabezado .contenedor img{
+    border-radius: 500px;
+    margin-left: 50px;
+}
+#encabezado .contenedor p{
+    height: 150px;
+    width: 550px;
+    justify-content:right;
+    margin-left:50px;
+    margin-top: 13.5%;
+}
+
+.cajas  {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 250px ;
+    margin-left: 250px;  
+}
+#conocimientos .cajas #caja{
+    text-align: center;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+#conocimientos{
+    background-color: #E9ECEF;
+    padding: 70px 0;
+    margin: auto;
+
+}
+
+#conocimientos h2{
+    margin-left: 50px;
+}
+
+.cajas img {
+    height: auto;
+    width: auto;
+    max-width: 25px;
+    max-width: 25px;
+}
+.cajas #caja1    
+{
+    
+    border: 15px solid black;
+    text-align: center;
+    box-shadow:  7px 13px 37px #000;
+}
+
+#contactame{ 
+    background-color: #E9ECEF;
+    padding: 70px 0;
+    margin: auto;
+}
+
+#contactame h2{
+    margin-left: 50px;
+}
+
+#contactame form
+{   
+        padding: 30px;
+        margin:auto;
+        margin-top: 50px;
+        width: 400px;
+        background: #F8F9FA;
+        border-radius: 5px;
+        color:#4a4e69;
+        box-shadow:  7px 13px 37px #000;
+}
+
+
+.controls{
+    width: 100%;
+    background: #F8F9FA;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #4a4e69;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:#4a4e69;
+}
+
+
+.controls textarea{
+    max-width:400px ;
+}
+.butons{  
+    width: 100%;
+    background: #F8F9FA;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #4a4e69;
+    font-size: 18px;
+    margin-bottom: 10px;  
+    color: #4a4e69;
+  }
+
+
+#contactame img{
+    margin-top: 50px;
+    height: auto;
+    width: auto;
+    max-width: 25px;
+    max-width: 25px;
+}
+
