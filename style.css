@@ -1,7 +1,14 @@
+/*ESTO ES UN COMENTARIO*/
+
 body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Space Mono', monospace;
-    background-color: #F8F9FA;
+    background-color: #E9ECEF;
+    margin: 0;
+   padding: 0; 
+}
+header{
+    background-color: white;
 }
 header .contenedor{
     display: flex; 
@@ -9,7 +16,7 @@ header .contenedor{
 }
 
 .contenedor{
-    max-width: 1280px;
+    max-width: 2280px;
     width: 90%;
     margin: auto;
 }
@@ -40,7 +47,8 @@ header p{
     background-size: cover;
     padding: 70px 0;
 }
-#encabezado #juani{
+
+#subtitulo{
     padding: 0px;
     margin-bottom: 0;
     margin-left: 50px;
@@ -50,6 +58,7 @@ header p{
     border-radius: 500px;
     margin-left: 50px;
 }
+
 #encabezado .contenedor p{
     height: 150px;
     width: 550px;
@@ -58,42 +67,36 @@ header p{
     margin-top: 13.5%;
 }
 
-.cajas  {
+.contenedor #encabezado .contenedor{
+    margin-left: 13.5;
+}
+.conocimientos .cajas{
     display: flex;
     justify-content: space-between;
     margin-right: 250px ;
-    margin-left: 250px;  
+    margin-left: 250px;   
 }
-#conocimientos .cajas #caja{
-    text-align: center;
+
+.conocimientos #caja {
+    margin-top: 5%;
+    background-color: white;
+    text-align: center;    
     border: 1px solid black;
-    width: 150px;
-    height: 150px;
-}
-#conocimientos{
-    background-color: #E9ECEF;
-    padding: 70px 0;
-    margin: auto;
-
-}
-
-#conocimientos h2{
-    margin-left: 50px;
-}
-
-.cajas img {
-    height: auto;
-    width: auto;
-    max-width: 25px;
-    max-width: 25px;
-}
-.cajas #caja1    
-{
-    
-    border: 15px solid black;
-    text-align: center;
+    width: 250px;
+    height: 250px;
     box-shadow:  7px 13px 37px #000;
 }
+
+.conocimientos #caja p {
+    margin-bottom: 0px;
+}
+
+#caja img {
+   margin-top: 13%;
+   width: 150px;
+   height: 150px;
+}
+
 
 #contactame{ 
     background-color: #E9ECEF;
@@ -154,4 +157,3 @@ header p{
     max-width: 25px;
     max-width: 25px;
 }
-
