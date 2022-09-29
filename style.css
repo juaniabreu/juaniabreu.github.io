@@ -62,33 +62,14 @@ header p{
 #encabezado .contenedor p{
     height: 150px;
     width: 550px;
-    justify-content:right;
+    justify-content:center;
     margin-left:50px;
-    margin-top: 13.5%;
-}
-
-.contenedor #encabezado .contenedor{
-    margin-left: 13.5;
-}
-.conocimientos .cajas{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 250px ;
-    margin-left: 250px;   
-}
-
-.conocimientos #caja {
     margin-top: 5%;
-    background-color: white;
-    text-align: center;    
-    border: 1px solid black;
-    width: 250px;
-    height: 250px;
-    box-shadow:  7px 13px 37px #000;
 }
 
-.conocimientos #caja p {
-    margin-bottom: 0px;
+.contenedor #encabezado {
+    margin-left: 13.5;
+    
 }
 
 #caja img {
@@ -96,7 +77,6 @@ header p{
    width: 150px;
    height: 150px;
 }
-
 
 #contactame{ 
     background-color: #E9ECEF;
@@ -119,7 +99,6 @@ header p{
         color:#4a4e69;
         box-shadow:  7px 13px 37px #000;
 }
-
 
 .controls{
     width: 100%;
@@ -149,8 +128,28 @@ header p{
     color: #4a4e69;
   }
 
+#contactame a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
-#contactame img{
+
+
+footer {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #393D3F;
+}
+footer p{
+    color: whitesmoke;
+    text-align: center;
+    margin: 0.6%;
+}
+footer img{
     margin-top: 50px;
     height: auto;
     width: auto;
