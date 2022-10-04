@@ -1,5 +1,3 @@
-/*ESTO ES UN COMENTARIO*/
-
 body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Space Mono', monospace;
@@ -19,6 +17,11 @@ header .contenedor{
     max-width: 2280px;
     width: 90%;
     margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+   
 }
 
 #encabezado .contenedor{
@@ -32,6 +35,9 @@ header ul {
 header a{
     text-decoration: none;
 }
+a:visited{
+    color: #000;
+}
 header ul li {
     margin-right: 20px;
 }
@@ -41,22 +47,27 @@ header p{
     font-size: 20px;
 }
 
-
-#encabezado{
-    background-color: #E9ECEF;
-    background-size: cover;
-    padding: 70px 0;
-}
-
 #subtitulo{
     padding: 0px;
     margin-bottom: 0;
     margin-left: 50px;
 }
 
+/*Sobre mi*/
+#encabezado{
+    background-color: #E9ECEF;
+    background-size: cover;
+    padding: 70px 0; 
+}
+
+
+
 #encabezado .contenedor img{
-    border-radius: 500px;
+
+    height: 30rem;
+    width: auto;
     margin-left: 50px;
+    border-radius: 6px;
 }
 
 #encabezado .contenedor p{
@@ -64,93 +75,131 @@ header p{
     width: 550px;
     justify-content:center;
     margin-left:50px;
-    margin-top: 5%;
-}
-
-.contenedor #encabezado {
-    margin-left: 13.5;
-    
-}
-
-#caja img {
-   margin-top: 13%;
-   width: 150px;
-   height: 150px;
-}
-
-#contactame{ 
-    background-color: #E9ECEF;
-    padding: 70px 0;
-    margin: auto;
-}
-
-#contactame h2{
-    margin-left: 50px;
-}
-
-#contactame form
-{   
-        padding: 30px;
-        margin:auto;
-        margin-top: 50px;
-        width: 400px;
-        background: #F8F9FA;
-        border-radius: 5px;
-        color:#4a4e69;
-        box-shadow:  7px 13px 37px #000;
-}
-
-.controls{
-    width: 100%;
-    background: #F8F9FA;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #4a4e69;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color:#4a4e69;
+    margin-top: 2%;
 }
 
 
-.controls textarea{
-    max-width:400px ;
-}
-.butons{  
-    width: 100%;
-    background: #F8F9FA;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #4a4e69;
-    font-size: 18px;
-    margin-bottom: 10px;  
-    color: #4a4e69;
-  }
 
-#contactame a {
+/*Estudios*/
+
+.conocimientos{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    align-content: center;
+    flex-direction: row;
     justify-content: center;
 }
 
+#dev1{
+    display: block;
+    margin: auto;
+}
+
+.conocimientos li{
+    list-style: none;
+    margin: 50px;
+    
+}
+.conocimientos #estudios{
+    margin-top: 35px;
+    margin-right: 200px;
+}
 
 
-footer {
+
+.conocimientos #estudios li{
+    margin:5px;
+    margin-left: 16px;
+}
+
+.conocimientos #habilidades{
+    margin-top: 35px;
+    margin-left: 13cm;
+    margin-right: 16px;
+}
+.conocimientos #habilidades img{
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+.conocimientos #habilidades li{
+    margin: 7px;
+    display: inline-block;
     height: 50px;
+    width: 50px ;
+    text-align: center;
+}
+
+/*Experiencia*/
+
+.Experiencia #ExperienciaS {
+    margin:5px;
+}
+.Experiencia ul li{
+    list-style: none;
+
+}
+.Experiencia ul{
+    margin-left: 220px;
+}
+.Experiencia h2{
+    margin-left: 220px;
+}
+
+/*Contactame*/
+
+.cuadradito{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #CED4DA;
+    border: 1px solid black;
+    height: 500px;
+    width:950px;
+}
+.cuadradito ul {
+    margin-top: 76px;
+}
+.cuadradito ul li {
+    margin-bottom: 60px;
+    margin-top: 20px;
+    list-style: none;
+}
+.cuadradito ul li a {
+    color: #000;
+    text-decoration: none;
+    
+}
+
+.cuadradito ul li a:visited {
+    color: #000;    
+}
+
+.cuadradito img{
+    width: 650px;
+    background-color: #E9ECEF;
+}
+footer {
+    display: flex;
+    height:auto;
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #393D3F;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
 }
 footer p{
-    color: whitesmoke;
+    color: black;
     text-align: center;
     margin: 0.6%;
 }
 footer img{
-    margin-top: 50px;
+    
+    margin: 2px;
     height: auto;
     width: auto;
     max-width: 25px;
