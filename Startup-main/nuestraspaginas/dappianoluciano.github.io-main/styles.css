@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #6190E8;
+  font-family: 'Oswald', sans-serif;
+  justify-content: space-between;
+  margin-block-end: 5%;
+  margin-top: 0%;
+}
+
+img{
+    border: 2px solid #000;
+    margin-top: 2%;
+} 
+.nav ul {
+  list-style: none;
+  background-color: #4570F5;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 60px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #C6C9F5;
+  display: block;
+  transition: .3s background-color;
+  width: 100%;
+}
+ 
+.nav a:hover {
+  background-color: #EB5B4D;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 220px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+  }
+ 
+}
+
+#principal {
+    padding: 0;
+    margin:auto;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #C6C9F5
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+p{
+    font-size: 20px;
+}
+
+fieldset{
+    margin-top: 10%;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-width: 20px;
+    color: #C6C9F5;
+    margin-block-end: 5%;
+}
+
+fieldset li{
+    list-style-type: none;
+    line-height: 60px;
+    font-size: 30px;
+    color:#C6C9F5
+}
+
+
+
+legend{
+    border: solid 5px #C6C9F5;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background: #4570F5;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 15px;
+
+}
+
+.bg-5{
+   background: linear-gradient(135deg, rgb(227, 227, 227) 0%, 100%);
+ }
+
+.animated-shadow {
+  color: #C6C9F5;
+  font: normal 80px 'Oswald', sans-serif;
+  height: 50px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -4px -4px 0 #13f1fc,
+      -3px -3px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc,
+      4px 4px 0 #da0641,
+      3px 3px 0 #da0641,
+      2px 2px 0 #da0641,
+      1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 #da0641,
+      -3px 3px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      4px -4px 0 #13f1fc,
+      3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+}
+
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	/*max-width:1000px;*/
+	left:0;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+/* unvisited link */
+a:link {
+    color:#C6C9F5;
+  }
+  
+  /* visited link */
+  a:visited {
+    color:#C6C9F5;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color:#4570F5;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #C6C9F5;
+  }
+
+  .content{
+    display: flex;
+    padding: 0;
+    margin:auto;
+    margin-top: 10%x;
+    width: 100%;
+    background: #6190E8;
+    color:#C6C9F5;
+    justify-content: center;
+    text-align: center;
+}
+
+#caja{ 
+    margin: 20px;
+    margin-left: 1%;
+    margin-top: 10%;
+    text-align: center;
+    width: 20%;
+    height: 280px;
+    background: #4570F5;
+    border-radius: 25px;
+    border: 3px solid #000 ;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+#caja img {
+  height: 200px;
+  width: 75%;
+  border:none;
+}
+
+
+footer {
+  position: fixed;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4570F5;
+}
+footer p{
+  color: #C6C9F5;
+  text-align: center;
+  margin: 0.6%;
+}
