@@ -1,0 +1,393 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', monospace;
+    background-color: #E9ECEF;
+    margin: 0;
+   padding: 0; 
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background: whitesmoke;
+}
+label{
+    height: 50px;
+}
+.trigger {
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    margin-left: 10px;
+    float: left;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 2rem;
+    position: relative;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Animaciones para rotarlo cuando se clickean */
+.trigger:checked ~ .hamburger span:first-child {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.trigger:checked ~ .hamburger span:last-child {
+    transform: rotate(-45deg);
+    top: -8px;
+}
+
+.trigger:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#opciones {
+    margin: 10px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    width: 100vw;
+    padding: 30px 70px;
+    margin-top: 29px;
+    position: absolute;
+    left: -100vw;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+}
+
+/* Lo muestro cuando se clickeo el menu */
+.trigger:checked ~ #opciones {
+    left: 0 !important;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.nav label {
+    display:flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.nav ul {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.nav label li {
+    list-style: none;
+}
+
+
+.nav label a{
+    color: black;
+    text-decoration: none;
+}
+
+@media (min-width: 1024px){
+    .hamburger {
+        display: none;
+    }
+
+    .nav {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        overflow-x: hidden;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #opciones {
+        position: inherit;
+        overflow: hidden;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 50%;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor{
+    max-width: 2280px;
+    width: 90%;
+    margin: auto;
+    display: block;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+#encabezado .contenedor{
+    display: flex;
+}
+
+
+#subtitulo{
+    padding: 0px;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+/*Sobre mi*/
+#encabezado{
+    background-color: #E9ECEF;
+    background-size: cover;
+    padding: 70px 0; 
+}
+
+
+
+#encabezado .contenedor img{
+
+    height: 30rem;
+    width: auto;
+    margin-left: 50px;
+    border-radius: 6px;
+}
+
+#encabezado .contenedor p{
+    height: 150px;
+    width: 550px;
+    justify-content:center;
+    margin-left:50px;
+    margin-top: 2%;
+}
+
+
+
+/*Estudios*/
+
+.conocimientos{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#dev1{
+    display: block;
+    margin: auto;
+}
+
+.conocimientos li{
+    list-style: none;
+    margin: 50px;
+    
+}
+.conocimientos #estudios{
+    margin-top: 35px;
+    margin-right: 200px;
+}
+
+
+
+.conocimientos #estudios li{
+    margin:5px;
+    margin-left: 16px;
+}
+
+.conocimientos #habilidades{
+    margin-top: 35px;
+    margin-left: 13cm;
+    margin-right: 16px;
+}
+.conocimientos #habilidades img{
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+.conocimientos #habilidades li{
+    margin: 7px;
+    display: inline-block;
+    height: 50px;
+    width: 50px ;
+    text-align: center;
+}
+
+/*Experiencia*/
+
+.Experiencia #ExperienciaS {
+    margin:5px;
+}
+.Experiencia ul li{
+    list-style: none;
+
+}
+.Experiencia ul{
+    margin-left: 220px;
+}
+.Experiencia h2{
+    margin-left: 220px;
+}
+
+/*Contactame*/
+.cuadradito{
+    margin: auto;
+    height: auto;
+    width: 350px;
+    font-size: 20px;
+
+}
+.cuadradito ul p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    list-style: none;
+}
+.cuadradito ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.cuadradito ul{
+    padding: 0;
+}
+
+.cuadradito ul li a:visited {
+    color: #000;    
+}
+
+.cuadradito img{
+    width: 650px;
+    background-color: #E9ECEF;
+}
+
+footer {
+    display: flex;
+    height:auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+footer p{
+    color: black;
+    text-align: center;
+    margin: 0.6%;
+}
+footer img{
+
+    margin: 2px;
+    height: auto;
+    width: auto;
+    max-width: 25px;
+    max-width: 25px;
+}
+
+
+@media screen and (max-width: 720px) {
+    #encabezado {
+        padding: 0;
+    }
+    #encabezado .contenedor{
+        display: block;
+        margin: 0;
+        padding: 0%;
+    }
+     #subtitulo{
+        font-size: 20px;
+    }
+    #encabezado .contenedor p {
+        font-size: 15px;
+        width: auto;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    #encabezado .contenedor img {
+        height: 300px;
+        display: flex;
+        margin: auto;
+    }
+
+
+        
+    .Experiencia #subtitulo{
+        padding: 0;
+        margin: 20px;
+    }  
+    .Experiencia ul{
+        margin: 15px;
+
+    }
+    .Experiencia ul li{
+        margin: 30px;
+
+    }
+
+
+    
+.conocimientos{
+    display: block;
+}
+
+#dev1{
+    margin-top: 50px;
+    display: flex;
+}
+
+.conocimientos li{
+    list-style: none;
+    margin: 2px;
+    
+}
+.conocimientos #estudios{
+    margin-top: 0px;
+    margin-right:0px;
+}
+
+
+
+.conocimientos #estudios li{
+    margin:0px;
+    margin-left: 0px;
+}
+
+.conocimientos #habilidades{
+    margin-top: 50px;
+    margin: 0;
+}
+.conocimientos #habilidades img{
+    height: 30px;
+    width: 30px;
+}
+
+.conocimientos #habilidades li{
+    margin: 0px;
+    height: 50px;
+    width: 50px ;
+}
+}
